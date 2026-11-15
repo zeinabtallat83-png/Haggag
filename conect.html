@@ -31,7 +31,7 @@ border:none;border-radius:12px;font-size:18px}
   <label>اليوم</label><input type="date" id="date">
   <label>الوقت</label><input type="time" id="time">
   <label>ملاحظات</label><textarea id="note" placeholder="بشتكي من ايه؟"></textarea>
- <a href=`https://wa.me/201090564323?text=${encodeURIComponent(msg)`> <button onclick="book()">تأكيد الحجز واتساب </button>  </a> 
+ <a href=`https://wa.me/201090564323?text=${encodeURIComponent(msg)}`> <button onclick="book()">تأكيد الحجز واتساب </button>  </a> 
 </div>  
 
 <script>
@@ -53,10 +53,10 @@ let msg =`الحجز من الموقع
 ملاحظة:${note.value}
 الاسم:${user.name}
 الموبايل:${user.phone}`;
-let whatsappLink =  '{https://wa.me/201090564323?text=${encodeURIComponent(msg)}';
+let whatsappLink = `https://wa.me/201090564323?text=${encodeURIComponent(msg)}`;
   window.open(whatsappLink, '_blank');
   alert('تم الحجز! هنتواصل معاكي على الواتساب للتأكيد');
-}}
+}
 </script>
 </body>
 </html> 
